@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/main.js"></script>
+
+    <title>Lab 2. Melnychuk</title>
+</head>
+<body>
+    
+    <p><b><i>Завдання 1. Знайти площу бічної поверхні правильної чотирикутної піраміди об’ємом V і висотою h. результат вивести з точністю до тисячних:</i></b></p>
+    
+    <label for="volumeInput">Об'єм піраміди (V):</label>
+    <input type="number" id="volumeInput" min="0">
+    <br>
+    <label for="heightInput">Висота піраміди (h):</label>
+    <input type="number" id="heightInput" min="0">
+    <br>
+    <button onclick="calculateSurfaceArea()">Обчислити площу бічної поверхні</button>
+
+    <div id="result_1"></div>
+
+    <p><b><i>Завдання 2. Знайти найбільшу висоту трикутника із вказаними сторонами.:</i></b></p>
+
+    <label for="sideA">Сторона A:</label>
+    <input type="number" id="sideA" min="0" step="any"><br> <!-- step="any" дозволяє користувачам вводити числа будь-якого значення з будь-якою точністю, включаючи десяткові числа. -->
+    <label for="sideB">Сторона B:</label>
+    <input type="number" id="sideB" min="0" step="any"><br>
+    <label for="sideC">Сторона C:</label>
+    <input type="number" id="sideC" min="0" step="any"><br>
+    <button onclick="calculateHeight()">Знайти найбільшу висоту</button>
+
+    <div id="result_2"></div>
+    
+    <p><b><i>Завдання 3. Задано деяке число N. Скласти програму пошуку суми простих чисел менших за N:</i></b></p>
+
+    <label for="numberInput">Введіть число N:</label>
+    <input type="number" id="numberInput">
+    <button onclick="showAllPrimesAndSum()">Знайти суму</button>    
+
+    <div id="result_3"></div>
+
+    <p><b><i>Завдання 4. Із даного натурального числа вилучити всі нулі та замінити їх зірочками:</i></b></p>
+  
+    <label for="inputNumber">Введіть число:</label>
+    <input type="number" id="inputNumber">
+    <button onclick="replaceZeros()">Замінити нулі</button>
+    
+    <div id="result_4"></div>
+
+</body>
+</html>
